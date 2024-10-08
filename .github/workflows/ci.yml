@@ -17,7 +17,7 @@ jobs:
 
     # Set up Python (required for aqtinstall)
     - name: Set up Python
-      uses: actions/setup-pythogin@v2
+      uses: actions/setup-python@v2
       with:
         python-version: '3.x'
 
