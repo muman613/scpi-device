@@ -36,6 +36,14 @@ jobs:
         echo "QT_DIR=$HOME/Qt/5.15.2/gcc_64" >> $GITHUB_ENV
         echo "$QT_DIR/bin" >> $GITHUB_PATH
 
+    # Install OpenGL dependencies
+    - name: Install OpenGL dependencies
+      run: sudo apt-get install -y mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev
+
+    # Install necessary build tools (e.g., CMake or qmake)
+    - name: Install build tools
+      run: sudo apt-get install -y build-essential cmake
+
     # List Qt5 prefix path
     - name: List Qt files
       run: |
