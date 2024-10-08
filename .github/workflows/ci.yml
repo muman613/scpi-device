@@ -29,6 +29,7 @@ jobs:
     - name: Install Qt 5.15
       run: |
         aqt install-qt linux desktop 5.15.2 gcc_64 --outputdir $HOME/Qt
+        aqt install-qt linux desktop 5.15.2 gcc_64 --modules charts
 
     # Set up Qt environment variables
     - name: Set Qt environment variables
