@@ -14,8 +14,8 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Core DBus Sql Quick Charts VirtualKeyboard Svg SerialPort Test REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core DBus Sql Quick Charts VirtualKeyboard Svg SerialPort Test REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core DBus Sql Quick Charts Svg SerialPort Test REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core DBus Sql Quick Charts Svg SerialPort Test REQUIRED)
 
 find_package(Threads)
 find_package(PkgConfig REQUIRED)
