@@ -17,7 +17,7 @@ jobs:
 
     # Set up Python (required for aqtinstall)
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-pythogin@v2
       with:
         python-version: '3.x'
 
@@ -28,7 +28,7 @@ jobs:
     # Install Qt 5.15 (replace "gcc_64" with the desired platform, such as "win64_msvc2019_64")
     - name: Install Qt 5.15
       run: |
-        aqt install-qt linux desktop 5.15.2 gcc_64
+        aqt install-qt linux desktop 5.15.2 gcc_64 --outputdir $HOME/Qt
 
     # Set up Qt environment variables
     - name: Set Qt environment variables
