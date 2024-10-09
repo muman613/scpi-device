@@ -1,4 +1,3 @@
-
 #include "scpi_device.h"
 #include <QSettings>
 #include <QDebug>

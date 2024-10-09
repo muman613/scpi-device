@@ -1,5 +1,5 @@
-
 #include "scpi_device.h"
+#include <QDebug>
 
 PSDevice::PSDevice(const QString& iniFilePath, const QString& deviceName)
     : SCPIDevice(iniFilePath, deviceName) {}

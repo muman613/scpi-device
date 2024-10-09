@@ -1,4 +1,3 @@
-
 #ifndef SCPIDEVICE_H
 #define SCPIDEVICE_H
 
